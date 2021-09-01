@@ -1,0 +1,65 @@
+Commenting in Lisp
+•;;; Comment
+•;; Comment that is indented with code
+•; Comment after a line of code
+•
+•#||
+Multiline Comment
+•||#
+
+(formatt “Lisp is awesome ~%”)
+•Format-> Outputing
+•t-> to terminal 
+•What to output  -> “Lisp is awesome”
+•Go to the next line or add a new line at the end -> ~%
+–(print “Lisp is awesome”)
+–(write "Hello World")
+–(write-line "Hello World")
+
+LISP uses prefix notation(+ 7 9 11)
++ symbol works as the function name for the process of summation of the numbers and 7, 9 , and 11 are the values to be added together. (+ 5 4) ; = 9 
+You can nest expressions in Lisp(+ 5 (-6 2)) ; = 9
+In prefix notation, operators are written before their operands. For example, the expression,a * ( b + c ) / d •Will be written as −(/ (* a (+ b c) ) d)
+
+Code to conver c to f and f to c
+(write-line " ")
+(write-line " Convert 10°C to °F: ")
+(write (+ (* (/ 9 5) 10) 32))(write-line " ")
+(write-line " Convert 50°F to °C: ")
+(write (* (/ (-50 32) 9) 5))
+
++Single quote notation 
+(write '(* 2 3))     (* 2 3) 
+(write (* 2 3))      6
+
+
+Defining Variables
+-mod, rem: Modulus Operator and remainder of after an integer division
+–incf: Increments operator increases integer value by the second argument specified
+–decf: Decrements operator decreases integer value by the second argument specified
+
+- = Checks if the values of the operands are all equal or not, if yes then condition becomes true.
+•(= A B); is not true.
+– /=Checks if the values of the operands are all different or not, if values are not equal then condition becomes true.
+•(/= A B); is true.
+– > Checks if the values of the operands are monotonically decreasing.
+•(> A B); is not true.
+– <Checks if the values of the operands are monotonically increasing.
+•(< A B); is true.
+– >= Checks if the value of any left operand is greater than or equal to the value of next right operand, if yes then condition becomes true.
+•(>= A B); is not true.
+– <= Checks if the value of any left operand is less than or equal to the value of its right operand, if yes then condition becomes true.
+•(<= A B); is true.
+– maxIt: Compares two or more arguments and returns the maximum value.
+•(max A B); results in 20
+– minIt: compares two or more arguments and returns the minimum value.
+•(min A B); returns 10
+
+
+– (defvarpi 3.14159) ; bind pi to 3.14159
+– (defconstantPI 3.141592)
+– (defparameterx 100)
+– (defvar*name* (read))
+
+https://canvas.uccs.edu/courses/123862/files?preview=4875151 
+check slides for more.
